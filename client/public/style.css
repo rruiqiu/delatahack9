@@ -8,7 +8,35 @@
   background-attachment: fixed;
   background-size: cover;
   margin-top: -20px;
+  margin-left: -20px;
+  margin-bottom: -20px;
+  margin-right: -20px;
 }
+
+.contents {
+  margin-top: 0.7rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.WelcomeCaword {
+  color: aliceblue;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: 250%;
+  margin: 0;
+}
+
+.beautiful-input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 250px;
+  height: 50px;
+  margin: 20px;
+}
+
 li {
   height: 20px;
   margin: 10px;
@@ -19,7 +47,7 @@ li {
   text-decoration: none;
 }
 body {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   margin-top: 0% 0% 0% 0%;
 }
 
@@ -29,58 +57,12 @@ ul {
   padding: 0;
   overflow: hidden;
   margin-left: 60px;
+  margin-right: 20px;
 }
 
 link {
   padding: 5px 5px 5px 5px;
 }
-
-/* button {
-  padding: 0.5px;
-  background-color: grey;
-  margin: 2px 2px 2px 2px;
-} */
-
-.button {
-  display: inline-block;
-  border-radius: 2px;
-  background-color: #aa77df;
-  border: none;
-  color: #aa77df;
-  text-align: center;
-  font-size: 15px;
-  padding: 15px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
 table {
   width: 100%;
 }
@@ -93,11 +75,18 @@ tbody {
 td {
   width: 50%;
 }
-
+.videohousing {
+  text-align: center;
+}
 #header {
   background-color: #006ac3;
+  color: rgba(240, 237, 237, 0.946);
+  align-items: center;
   padding: 10px;
   width: 100%;
+  margin-left: -17px;
+  margin-top: -10px;
+  display: flex;
 }
 
 .dropdown {
@@ -169,4 +158,160 @@ td {
   position: absolute;
   top: -10px;
   right: 20px;
+}
+
+/* CSS for the main page button */
+.button-home {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #373b44;
+
+  padding: calc(1.5em + var(--s)) calc(1.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 150%;
+  border-radius: 10%;
+}
+.Bankcontext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #333333;
+  text-align: left;
+}
+.text-info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #333333;
+}
+.button-home:hover,
+.button-home:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button-home:active {
+  background: var(--color);
+  color: #fff;
+  size: 0.1em;
+}
+button {
+  margin-left: 20px;
+  margin-right: 20px;
+  transform: scale(1/3, 1/4);
+}
+
+.button-design {
+  text-align: center;
+  color: #2d3436;
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+  text-align: center;
+  color: #006ac3;
+}
+
+#rental {
+  background-color: lightblue;
+  margin-left: -8px;
+  margin-right: -10px;
+  margin-top: -25px;
+}
+
+.house {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#top {
+  text-align: center;
+  font-weight: 200;
+  font-size: larger;
+}
+
+.beautiful-search-button {
+  background: linear-gradient(to right, #0e3acc, #6ec6ff);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.beautiful-search-button:hover {
+  background: linear-gradient(to right, #3f99d5, #2196f3);
+}
+
+.beautiful-search-button:active {
+  transform: scale(0.95);
+}
+.custom-button1 {
+  padding: 12px 30px;
+  margin-right: 70px;
+  margin-left: 70px;
+  border-radius: 50px;
+  background-color: #4f6a88;
+  color: rgb(216, 206, 206);
+  font-size: 26px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 2px 2px 8px #ccc;
+  text-decoration: none;
+}
+
+.custom-button1:hover {
+  transform: scale(1.1);
+  background-color: #502c0b;
+}
+
+.custom-button2 {
+  padding: 12px 30px;
+  margin-right: 70px;
+  margin-left: 70px;
+  border-radius: 50px;
+  background-color: #182278;
+  color: white;
+  font-size: 26px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-left: 10px;
+  box-shadow: 2px 2px 8px #ccc;
+}
+
+.custom-button2:hover {
+  transform: scale(1.1);
+  background-color: #451f08;
+}
+
+a {
+  color: rgb(210, 205, 205);
+}
+.button-welcome {
+  padding-top: 2rem;
 }
